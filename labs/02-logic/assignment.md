@@ -46,8 +46,9 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure]()
+   <img width="1380" alt="DigitalElectronicsLab2" src="https://user-images.githubusercontent.com/99410918/154556835-2a605521-deb3-47a2-b67a-3cc589540ee0.png">
+
 
 3. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   https://www.edaplayground.com/x/ArVe
