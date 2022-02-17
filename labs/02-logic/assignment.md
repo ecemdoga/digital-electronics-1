@@ -1,4 +1,4 @@
-# Lab 2: EcemDoga_Arica
+# Lab 2: ECEMDOGA_ARICA
 ### 2-bit comparator
 
 1. Karnaugh maps for other two functions:
