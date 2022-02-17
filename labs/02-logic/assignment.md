@@ -1,5 +1,4 @@
-# Lab 2: YOUR_FIRSTNAME LASTNAMEE
-
+# Lab 2: EcemDoga_Arica
 ### 2-bit comparator
 
 1. Karnaugh maps for other two functions:
