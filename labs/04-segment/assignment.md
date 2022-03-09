@@ -77,7 +77,7 @@
         report "Input combination 1111 FAILED" severity error;        
 
     
-        report "Stimulus process finished. You're great, bro." severity note;
+        report "Stimulus process finished." severity note;
         wait;
     end process p_stimulus;
 
