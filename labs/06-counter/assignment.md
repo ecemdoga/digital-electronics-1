@@ -33,7 +33,8 @@
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   <img width="1127" alt="Ekran Resmi 2022-03-23 20 05 06" src="https://user-images.githubusercontent.com/99410918/159776751-78b10b90-f4e4-468c-8573-fe810c496e38.png">
+   <img width="1422" alt="Ekran Resmi 2022-03-23 20 08 38" src="https://user-images.githubusercontent.com/99410918/159777391-08989297-dd38-4c48-acb8-d223177920a7.png">
+
 
 
 ### Two counters
