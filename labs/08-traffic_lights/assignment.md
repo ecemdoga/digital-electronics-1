@@ -97,4 +97,5 @@
 
 3. Screenshot with simulated time waveforms. The full functionality of the entity must be verified. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   <img width="1211" alt="Ekran Resmi 2022-04-06 18 42 36" src="https://user-images.githubusercontent.com/99410918/162025313-b34bf819-03ff-4470-837b-be734682dca3.png">
+
