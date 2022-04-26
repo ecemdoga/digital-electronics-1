@@ -8,14 +8,17 @@ use ieee.numeric_std.all;
 
 
 entity Clk_set is
-	port( 	h_in:  in  std_logic;
-		m_in:	 in  std_logic;
-		s_in:	 in  std_logic;
-		h_out: out std_logic;
-		m_out: out std_logic;
-		s_out: out std_logic
+	port( 	h_in:   in  std_logic;
+		m_in:	in  std_logic;
+		s_in:   in  std_logic;
+		H1  : out std_logic_vector (3 downto 0);
+                H2  : out std_logic_vector (3 downto 0);
+                M1  : out std_logic_vector (3 downto 0);
+                M2  : out std_logic_vector (3 downto 0);
+                S1  : out std_logic_vector (3 downto 0);
+                S2  : out std_logic_vector (3 downto 0)
 		  );
-end Controller;
+end Clk_set;
 
 
 architecture Behaviour of Clk_set is   
@@ -27,25 +30,19 @@ signal s_M1  : unsigned (3 downto 0) :=(others => '0'); -- Minutes
 signal s_S2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of seconds
 signal s_S1  : unsigned (3 downto 0) :=(others => '0'); -- Seconds
 
-begin
-
-signal m1: integer range 0 to 10 := 0; -- ones
-signal m2: integer range 0 to 6 := 0; -- tens
-
-signal h1: integer range 0 to 10 := 0; -- ones
-signal h2: integer range 0 to 2 := 0; -- tnes
 
 
 second_p:process(s_in)
 begin
     if rising_edge(s_in) then        
-                if(s_S1 < "1001") 
+                if(s_S1 < "1000") 
                     then s_S1 <= s_S1 + 1;
                 else 
                     s_S2 <= s_S2 + 1;
                     s_S1 <= (others => '0');
                 if(s_S2 > "0100") then
                     s_S2 <= (others => '0');
+		    s_S1 <= (others => '0');
                 end if;
                 end if;
     end if;
@@ -62,6 +59,7 @@ begin
                     s_M1 <= (others => '0');
                 if(s_M2 > "0100") then 
                     s_M2 <= (others => '0'); 
+		    s_M1 <= (others => '0');
 		end if;
 		end if;
     end if;
