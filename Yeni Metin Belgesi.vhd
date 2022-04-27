@@ -23,13 +23,12 @@ end Clk_set;
 
 architecture Behaviour of Clk_set is   
 
-signal s_H2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of hours
 signal s_H1  : unsigned (3 downto 0) :=(others => '0'); -- Hours
-signal s_M2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of minutes
+signal s_H2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of hours 
 signal s_M1  : unsigned (3 downto 0) :=(others => '0'); -- Minutes
-signal s_S2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of seconds
+signal s_M2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of minutes 
 signal s_S1  : unsigned (3 downto 0) :=(others => '0'); -- Seconds
-
+signal s_S2  : unsigned (3 downto 0) :=(others => '0'); -- Tens of seconds
 
 
 second_p:process(s_in)
