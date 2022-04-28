@@ -20,7 +20,7 @@
 
 ## Project objectives
 
-* Displaying the alarm clock on the board.
+* Displaying the alarm clock on board Nexys A7.
 * Detecting inputs (alarm and reset) from the user.
 * Setting the alarm time from the input.
 * An audible warning when an alarm operation occurs.
